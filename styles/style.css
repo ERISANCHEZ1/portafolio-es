@@ -1,0 +1,411 @@
+/* Estilos generales */
+body {
+    background-color: #f8f8fc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #111;
+}
+
+/* Estilos generales del menú */
+nav {
+    background-color: #6a5acd;
+    padding: 0.625rem 0; /* 10px */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Ajuste para el contenedor de la lista */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
+}
+
+/* Elementos del menú */
+nav ul li {
+    margin: 0 0.625rem; /* 10px */
+}
+
+/* Enlaces del menú */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1rem; /* Ajuste del tamaño del texto */
+    padding: 0.5rem; /* Espaciado para mejorar la accesibilidad */
+}
+
+/* Cambio de color en hover */
+nav ul li a:hover {
+    color: #dcd6ff;
+}
+
+/* Sección de presentación */
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 6.25rem auto; /* 100px */
+}
+
+/* Sección de texto */
+.info {
+    width: 50%;
+    text-align: left;
+}
+
+.info h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+.info h1 span {
+    color: #6a5acd;
+    font-weight: bold;
+}
+
+.info h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.9375rem; /* 15px */
+}
+
+.info p {
+    font-size: 1.2em;
+    color: #444;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    margin-top: 1.25rem; /* 20px */
+    border: 0.25rem solid #1e0115; /* 4px */
+    background-color: #6a5acd;
+    color: white;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    border-radius: 0.5rem; /* 8px */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    justify-content: center;
+    display: flex;
+}
+
+.btn i {
+    margin-left: 0.625rem; /* 10px */
+}
+
+.btn:hover {
+    background-color: #938bc9;
+}
+
+/* Iconos sociales */
+.iconos {
+    margin-bottom: 0.9375rem; /* 15px */
+}
+
+.iconos a {
+    text-decoration: none;
+    color: #6a5acd;
+    font-size: 1.5rem; /* 24px */
+    margin-right: 0.9375rem; /* 15px */
+    transition: color 0.3s;
+}
+
+.iconos a:hover {
+    color: #5a4bbf;
+}
+
+/* Sección de imagen */
+.imagen {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fondo {
+    position: absolute;
+    width: 18.75rem; /* 300px */
+    height: 18.75rem; /* 300px */
+    background-color: #6a5acd;
+    border-radius: 50%;
+    z-index: -1;
+    top: 1.25rem; /* 20px */
+    right: 0;
+}
+
+.imagen img {
+    width: 15.625rem; /* 250px */
+    border-radius: 50%;
+    position: relative;
+}
+
+footer {
+    background-color: #6a5acd;
+    color: white;
+    padding: 1.25rem; /* 20px */
+    text-align: center;
+}
+
+/* Responsividad */
+@media (max-width: 1200px) { /* 768px */
+
+    .presentacion {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 5%;
+        width: auto;
+    }
+    
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        padding: 0.5rem; 
+    }
+
+    nav ul li {
+        margin: 5px; 
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; 
+        padding: 10%; 
+    }
+
+    .info, .imagen {
+        width: 100%;
+    }
+
+    .imagen {
+        justify-content: center;
+        margin-top: 1.25rem; /* 20px */
+    }
+
+    .redes-inferiores {
+        margin-top: 0.9375rem; /* 15px */
+        display: flex;
+        justify-content: start;
+        gap: 0.9375rem; /* 15px */
+    }
+    
+    .redes-inferiores a {
+        font-size: 1.5rem; /* 24px */
+        color: #d5d4de;
+        transition: color 0.3s, border 0.3s;
+        border: 0.25rem solid #320324; /* 4px */
+        padding: 0.3125rem 0.625rem; /* 5px 10px */
+        border-radius: 0.3125rem; /* 5px */
+        text-decoration: none;
+    }
+    
+    .redes-inferiores a:hover {
+        color: #dbd9e3;
+        border-color: #5f0835;
+    }
+}
+/* Estilos generales */
+body {
+    background-color: #f8f8fc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #111;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #6a5acd;
+    padding: 0.625rem 0; /* 10px */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 0.9375rem; /* 15px */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6a5acd;
+}
+
+/* Sección de presentación */
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 6.25rem auto; /* 100px */
+    gap: 82px;
+}
+
+/* Sección de texto */
+.info {
+    width: 50%;
+    text-align: left;
+}
+
+.info h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.625rem; /* 10px */
+}
+
+.info h1 span {
+    color: #6a5acd;
+    font-weight: bold;
+}
+
+.info h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.9375rem; /* 15px */
+}
+
+.info p {
+    font-size: 1.2em;
+    color: #444;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    margin-top: 1.25rem; /* 20px */
+    border: 0.25rem solid #1e0115; /* 4px */
+    background-color: #6a5acd;
+    color: white;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    border-radius: 0.5rem; /* 8px */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    justify-content: center;
+    display: flex;
+}
+
+.btn i {
+    margin-left: 0.625rem; /* 10px */
+}
+
+.btn:hover {
+    background-color: #938bc9;
+}
+
+/* Iconos sociales */
+.iconos {
+    margin-bottom: 0.9375rem; /* 15px */
+}
+
+.iconos a {
+    text-decoration: none;
+    color: #6a5acd;
+    font-size: 1.5rem; /* 24px */
+    margin-right: 0.9375rem; /* 15px */
+    transition: color 0.3s;
+}
+
+.iconos a:hover {
+    color: #5a4bbf;
+}
+
+/* Sección de imagen */
+.imagen {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fondo {
+    position: absolute;
+    width: 18.75rem; /* 300px */
+    height: 18.75rem; /* 300px */
+    background-color: #6a5acd;
+    border-radius: 50%;
+    z-index: -1;
+    top: 1.25rem; /* 20px */
+    right: 0;
+}
+
+.imagen img {
+    width: 15.625rem; /* 250px */
+    border-radius: 50%;
+    position: relative;
+}
+
+footer {
+    background-color: #6a5acd;
+    color: white;
+    padding: 1.25rem; /* 20px */
+    text-align: center;
+}
+
+/* Responsividad */
+@media (max-width: 48rem) { /* 768px */
+    .presentacion {
+        flex-direction:  column-reverse;
+        text-align: center;
+    }
+    
+  
+    .info, .imagen {
+        width: 100%;
+    }
+
+    .imagen {
+        justify-content: center;
+        margin-top: 1.25rem; /* 20px */
+    }
+
+    .redes-inferiores {
+        margin-top: 0.9375rem; /* 15px */
+        display: flex;
+        justify-content: start;
+        gap: 0.9375rem; /* 15px */
+    }
+    
+    .redes-inferiores a {
+        font-size: 1.5rem; /* 24px */
+        color: #d5d4de;
+        transition: color 0.3s, border 0.3s;
+        border: 0.25rem solid #320324; /* 4px */
+        padding: 0.3125rem 0.625rem; /* 5px 10px */
+        border-radius: 0.3125rem; /* 5px */
+        text-decoration: none;
+    }
+    
+    .redes-inferiores a:hover {
+        color: #dbd9e3;
+        border-color: #5f0835;
+    }
+
+   }
